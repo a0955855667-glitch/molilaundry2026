@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>沫麗專業洗衣</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -15,57 +13,37 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
-body{<!-- 右下角LINE客服按鈕 -->
-<a href="https://page.line.me/942hhawk" target="_blank"
-style="
-position:fixed;
-right:20px;
-bottom:20px;
-width:70px;
-height:70px;
-background:#06C755;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 6px 20px rgba(0,0,0,.25);
-z-index:99999;
-text-decoration:none;
-">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-style="width:42px;height:42px;fill:white;">
-<path d="M256 32C132.3 32 32 114.3 32 215.8c0 57.4 32.2 108.7 82.5 142.7-3.6 13.6-13.2 49.4-15.2 57.1-2.5 9.6 3.5 9.5 7.3 7.2 3-.8 48.6-33 68.3-46.9 25.5 7 52.6 10.7 81.1 10.7 123.7 0 224-82.3 224-183.8S379.7 32 256 32z"/>
-</svg>
-</a>
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei",sans-serif;
 background:#f7fbff;
 color:#333;
+line-height:1.8;
 }
 
 .menu-btn{
 position:fixed;
-top:20px;
-right:20px;
+top:15px;
+right:15px;
 width:55px;
 height:55px;
 border:none;
-background:#fff;
+background:white;
 border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.15);
 font-size:28px;
-z-index:999;
+z-index:9999;
 }
 
 .mobile-menu{
 display:none;
 position:fixed;
-top:90px;
-right:20px;
+top:80px;
+right:15px;
 background:white;
 padding:20px;
 border-radius:15px;
 box-shadow:0 10px 30px rgba(0,0,0,.15);
-z-index:999;
+z-index:9999;
 }
 
 .mobile-menu a{
@@ -73,39 +51,42 @@ display:block;
 padding:10px 0;
 text-decoration:none;
 color:#333;
-font-size:18px;
+font-weight:bold;
 }
 
 .hero{
-background:linear-gradient(135deg,#edf7ff,#d9ecff);
-padding:70px 20px;
+background:linear-gradient(135deg,#e8f4ff,#d5ebff);
+padding:80px 20px;
 text-align:center;
 }
 
-.logo{
-width:180px;
-}
-
-h1{
+.hero h1{
 font-size:42px;
-color:#5c96cf;
-margin-top:20px;
+color:#5a97d1;
 }
 
-.subtitle{
-font-size:22px;
-margin-top:15px;
+.hero p{
+font-size:20px;
+margin-top:10px;
 }
 
 .btn{
 display:inline-block;
-background:#5c96cf;
-color:white;
-padding:15px 35px;
+margin:10px;
+padding:14px 28px;
 border-radius:12px;
 text-decoration:none;
-font-size:20px;
-margin-top:25px;
+font-weight:bold;
+}
+
+.phone-btn{
+background:#5a97d1;
+color:white;
+}
+
+.line-btn{
+background:#06C755;
+color:white;
 }
 
 .container{
@@ -123,14 +104,8 @@ box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 h2{
-font-size:32px;
-margin-bottom:20px;
-}
-
-.price-img{
-width:100%;
-border-radius:15px;
-margin-bottom:20px;
+margin-bottom:15px;
+color:#5a97d1;
 }
 
 .service-grid{
@@ -140,7 +115,7 @@ gap:15px;
 }
 
 .service{
-background:#eef5ff;
+background:#eef6ff;
 padding:18px;
 border-radius:12px;
 text-align:center;
@@ -153,22 +128,35 @@ padding:30px;
 color:#888;
 }
 
+.line-float{
+position:fixed;
+right:20px;
+bottom:20px;
+width:75px;
+height:75px;
+background:#06C755;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+z-index:99999;
+}
+
 @media(max-width:768px){
 
 .service-grid{
 grid-template-columns:1fr;
 }
 
-h1{
+.hero h1{
 font-size:34px;
 }
 
-.logo{
-width:140px;
 }
-
-}
-
 </style>
 </head>
 
@@ -177,25 +165,24 @@ width:140px;
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 <div id="mobileMenu" class="mobile-menu">
-<a href="#about">關於我們</a>
+<a href="#about">關於沫麗</a>
 <a href="#service">服務項目</a>
-<a href="#price">價目表</a>
 <a href="#member">會員優惠</a>
 <a href="#contact">聯絡我們</a>
 </div>
 
 <section class="hero">
 
-<img class="logo" src="https://i.imgur.com/ZT4Y5jX.png">
-
 <h1>沫麗專業洗衣</h1>
 
-<div class="subtitle">
-乾洗・洗鞋・洗包・棉被床組·皮衣保養
-</div>
+<p>乾洗｜洗鞋｜洗包｜棉被床組</p>
 
-<a class="btn" href="tel:0988989898">
+<a href="tel:0988989898" class="btn phone-btn">
 立即撥打
+</a>
+
+<a href="https://page.line.me/942hhawk" class="btn line-btn" target="_blank">
+官方LINE
 </a>
 
 </section>
@@ -203,29 +190,12 @@ width:140px;
 <div class="container">
 
 <div class="card" id="about">
+<h2>關於沫麗</h2>
 
-<h2>關於我們</h2>
+沫麗專業洗衣提供專業洗衣、洗鞋、洗包與棉被床組清潔服務。
 
-提供專業洗衣、乾洗、洗鞋、洗包與棉被床組洗滌服務。
-
-嚴格把關每一道洗滌流程，
-讓您的衣物獲得最完善的照護。
-
-</div>
-
-<div class="card" id="contact">
-
-<h2>門市資訊</h2>
-
-📍 台北市中山區八德路888888號<br><br>
-
-📞 0988-989-898<br><br>
-
-LINE：0966855668<br><br>
-
-🕒 週一至週五 10:30-20:00<br>
-🕒 週六 10:30-18:00<br>
-❌ 週日公休
+每件衣物皆經過細心檢查與專業處理，
+讓您的衣物獲得最佳照顧。
 
 </div>
 
@@ -235,30 +205,14 @@ LINE：0966855668<br><br>
 
 <div class="service-grid">
 
-<div class="service">一般衣物洗滌</div>
-<div class="service">高級衣物乾洗</div>
-<div class="service">洗鞋服務</div>
-<div class="service">洗包服務</div>
-<div class="service">棉被床組</div>
-<div class="service">羽絨外套</div>
-<div class="service">窗簾地毯</div>
-<div class="service">精品護理</div>
+<div class="service">👔 一般衣物洗滌</div>
+<div class="service">🧥 高級衣物乾洗</div>
+<div class="service">👟 洗鞋服務</div>
+<div class="service">👜 洗包服務</div>
+<div class="service">🛏️ 棉被床組</div>
+<div class="service">✨ 精品護理</div>
 
 </div>
-
-</div>
-
-<div class="card" id="price">
-
-<h2>價目表</h2>
-
-<img class="price-img" src="價目表圖片網址1">
-
-<img class="price-img" src="價目表圖片網址2">
-
-<img class="price-img" src="價目表圖片網址3">
-
-<img class="price-img" src="價目表圖片網址4">
 
 </div>
 
@@ -266,36 +220,55 @@ LINE：0966855668<br><br>
 
 <h2>會員優惠</h2>
 
-💎 儲值1000元享會員價<br><br>
-
-💎 儲值3000元送200元<br><br>
-
-💎 儲值5000元送500元<br><br>
-
+💎 儲值1000元享會員價<br>
+💎 儲值3000元送200元<br>
+💎 儲值5000元送500元<br>
 💎 儲值10000元送1200元
+
+</div>
+
+<div class="card">
+
+<h2>價目表</h2>
+
+價目表圖片上傳後將顯示於此。
+
+</div>
+
+<div class="card" id="contact">
+
+<h2>聯絡我們</h2>
+
+📞 0988-989-898<br><br>
+
+💬 LINE官方帳號<br>
+@942hhawk<br><br>
+
+🕒 週一至週五 10:30-20:00<br>
+🕒 週六 10:30-18:00<br>
+❌ 週日公休
 
 </div>
 
 </div>
 
 <div class="footer">
-© 2026 沫麗專業洗衣
+© 沫麗專業洗衣 MOLI LAUNDRY
 </div>
 
+<a href="https://page.line.me/942hhawk" target="_blank" class="line-float">
+LINE
+</a>
+
 <script>
-
 function toggleMenu(){
-
-const menu=document.getElementById('mobileMenu');
-
+const menu=document.getElementById("mobileMenu");
 if(menu.style.display==="block"){
 menu.style.display="none";
 }else{
 menu.style.display="block";
 }
-
 }
-
 </script>
 
 </body>
