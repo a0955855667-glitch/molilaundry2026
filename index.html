@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>沫麗專業洗衣｜乾洗・洗鞋・洗包・棉被床組</title>
 
 <style>
@@ -15,111 +14,122 @@ box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:#f5f9ff;
+font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei",sans-serif;
+background:#f8fbff;
 color:#333;
 line-height:1.8;
 }
 
-.hero{
-background:linear-gradient(135deg,#edf7ff,#d8ebff);
+header{
+background:linear-gradient(135deg,#dceeff,#f5fbff);
+padding:80px 20px;
 text-align:center;
-padding:60px 20px;
 }
 
 .logo{
-width:180px;
-margin:auto;
-display:block;
+font-size:90px;
 }
 
 h1{
-font-size:46px;
-color:#5a97d1;
-margin-top:20px;
+font-size:48px;
+color:#4b8bc7;
+margin-top:15px;
 }
 
 .subtitle{
 font-size:22px;
-margin-top:15px;
+margin-top:10px;
+color:#555;
 }
 
-.btn-group{
+.button-wrap{
 margin-top:30px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 30px;
+padding:14px 28px;
 border-radius:12px;
 text-decoration:none;
-margin:5px;
-font-size:18px;
 font-weight:bold;
+margin:5px;
 }
 
-.call{
-background:#5a97d1;
-color:white;
+.phone{
+background:#4b8bc7;
+color:#fff;
 }
 
 .line{
 background:#06C755;
-color:white;
+color:#fff;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:20px;
+padding:30px 20px;
 }
 
-.card{
-background:white;
-padding:30px;
+.section{
+background:#fff;
 border-radius:20px;
+padding:30px;
 margin-bottom:25px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-h2{
-font-size:32px;
-margin-bottom:20px;
+.section h2{
+margin-bottom:15px;
+color:#4b8bc7;
 }
 
-.info{
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:15px;
+}
+
+.service{
+background:#eef6ff;
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+}
+
+.flow{
+text-align:center;
+font-size:18px;
+}
+
+.member{
 font-size:20px;
 line-height:2;
 }
 
-.member{
-font-size:22px;
-line-height:2;
+.contact{
+font-size:18px;
 }
 
-.price-img{
-width:100%;
-border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,.1);
-}
-
-.footer{
+footer{
 text-align:center;
-padding:30px;
-color:#777;
+padding:40px;
+color:#888;
 }
 
-.floating-call{
+.floating-line{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#5a97d1;
+background:#06C755;
 color:white;
 padding:15px 20px;
 border-radius:999px;
 text-decoration:none;
 font-weight:bold;
-z-index:999;
+box-shadow:0 4px 12px rgba(0,0,0,.2);
 }
 
 @media(max-width:768px){
@@ -132,17 +142,8 @@ font-size:36px;
 font-size:18px;
 }
 
-h2{
-font-size:28px;
-}
-
-.info,
-.member{
-font-size:18px;
-}
-
 .logo{
-width:140px;
+font-size:70px;
 }
 
 }
@@ -152,55 +153,93 @@ width:140px;
 
 <body>
 
-<section class="hero">
+<header>
 
-<img src="https://i.imgur.com/ZJ4uJQY.png" class="logo">
+<div class="logo">🫧</div>
 
 <h1>沫麗專業洗衣</h1>
 
 <div class="subtitle">
-乾洗・洗鞋・洗包・棉被床組
+乾洗｜洗鞋｜洗包｜棉被床組
 </div>
 
-<div class="btn-group">
+<div class="button-wrap">
 
-<a href="tel:0988989898" class="btn call">
+<a class="btn phone" href="tel:0988989898">
 立即撥打
 </a>
 
-<a href="https://line.me/ti/p/0966855668" class="btn line">
+<a class="btn line" href="#">
 LINE預約
 </a>
 
 </div>
 
-</section>
+</header>
 
 <div class="container">
 
-<div class="card">
+<div class="section">
 
-<h2>門市資訊</h2>
+<h2>關於沫麗</h2>
 
-<div class="info">
+沫麗專業洗衣致力於提供專業洗衣、洗鞋、洗包與棉被床組清潔服務。
 
-📍 台北市中山區八德路888888號<br>
+每件衣物皆經過細心檢查與專業處理，讓您放心將珍愛衣物交給我們照顧。
 
-📞 0988-989-898<br>
+</div>
 
-LINE：0966855668<br>
+<div class="section">
 
-🕒 週一至週五 10:30－20:00<br>
+<h2>服務項目</h2>
 
-🕒 週六 10:30－18:00<br>
+<div class="services">
 
-❌ 週日公休
+<div class="service">👔 衣物洗滌</div>
+
+<div class="service">👟 洗鞋服務</div>
+
+<div class="service">👜 洗包服務</div>
+
+<div class="service">🛏️ 棉被床組</div>
+
+<div class="service">🪟 窗簾地毯</div>
+
+<div class="service">✨ 精品護理</div>
 
 </div>
 
 </div>
 
-<div class="card">
+<div class="section">
+
+<h2>服務流程</h2>
+
+<div class="flow">
+
+① 收件檢查
+
+↓<br>
+
+② 洗前拍照
+
+↓<br>
+
+③ 專業洗滌
+
+↓<br>
+
+④ 品質檢查
+
+↓<br>
+
+⑤ 通知取件
+
+</div>
+
+</div>
+
+<div class="section">
 
 <h2>會員優惠</h2>
 
@@ -218,47 +257,44 @@ LINE：0966855668<br>
 
 </div>
 
-<div class="card">
+<div class="section">
 
-<h2>服飾類價目表</h2>
+<h2>價目表</h2>
 
-<p>請上傳第一張價目表圖片後替換此處</p>
-
-</div>
-
-<div class="card">
-
-<h2>寢具／鞋類價目表</h2>
-
-<p>請上傳第二張價目表圖片後替換此處</p>
+價目表圖片即將上線，歡迎來電或 LINE 詢問。
 
 </div>
 
-<div class="card">
+<div class="section">
 
-<h2>配件／其他價目表</h2>
+<h2>聯絡我們</h2>
 
-<p>請上傳第三張價目表圖片後替換此處</p>
+<div class="contact">
 
-</div>
+📍 台北市中山區八德路888888號<br><br>
 
-<div class="card">
+📞 0988989898<br><br>
 
-<h2>制服類價目表</h2>
+LINE：0966855668<br><br>
 
-<p>請上傳第四張價目表圖片後替換此處</p>
+🕒 週一至週五 10:30－20:00<br>
+
+🕒 週六 10:30－18:00<br>
+
+❌ 週日公休
 
 </div>
 
 </div>
 
-<a class="floating-call" href="tel:0988989898">
-📞 立即來電
-</a>
+</div>
 
-<div class="footer">
+<a class="floating-line" href="#">
+LINE預約</a>
+
+<footer>
 © 沫麗專業洗衣 MOLI LAUNDRY
-</div>
+</footer>
 
 </body>
 </html>
