@@ -26,20 +26,19 @@ text-align:center;
 }
 
 .logo{
-width:180px;
-margin:auto;
-display:block;
+font-size:100px;
 }
 
 h1{
 font-size:42px;
 color:#4d89c7;
-margin-top:20px;
+margin-top:15px;
 }
 
 .subtitle{
 font-size:22px;
 margin-top:15px;
+margin-bottom:20px;
 }
 
 .btn{
@@ -50,7 +49,11 @@ padding:15px 35px;
 border-radius:12px;
 text-decoration:none;
 font-size:20px;
-margin-top:25px;
+margin:8px;
+}
+
+.line-btn{
+background:#06C755;
 }
 
 .container{
@@ -92,7 +95,12 @@ padding:30px;
 color:#888;
 }
 
+a{
+color:#2563eb;
+}
+
 @media(max-width:768px){
+
 .service-grid{
 grid-template-columns:1fr;
 }
@@ -100,6 +108,11 @@ grid-template-columns:1fr;
 h1{
 font-size:34px;
 }
+
+.subtitle{
+font-size:18px;
+}
+
 }
 </style>
 
@@ -109,7 +122,7 @@ font-size:34px;
 
 <div class="hero">
 
-<img src="https://i.imgur.com/8P5fQ3f.png" class="logo">
+<div class="logo">🧺</div>
 
 <h1>沫麗專業洗衣</h1>
 
@@ -121,9 +134,23 @@ font-size:34px;
 立即撥打
 </a>
 
+<a class="btn line-btn" href="https://line.me/ti/p/0966855668">
+LINE預約
+</a>
+
 </div>
 
 <div class="container">
+
+<div class="card">
+
+<h2>關於沫麗</h2>
+
+沫麗專業洗衣提供專業洗衣、乾洗、洗鞋、洗包與棉被床組清潔服務。<br><br>
+
+每件衣物皆經過細心檢查與專業處理，讓您放心將珍愛衣物交給我們照顧。
+
+</div>
 
 <div class="card">
 
@@ -131,9 +158,9 @@ font-size:34px;
 
 📍 台北市中山區八德路888888號<br><br>
 
-📞 0988-989-898<br><br>
+📞 <a href="tel:0988989898">0988-989-898</a><br><br>
 
-LINE：0966855668<br><br>
+LINE：<a href="https://line.me/ti/p/0966855668">0966855668</a><br><br>
 
 🕒 週一至週五 10:30-20:00<br>
 🕒 週六 10:30-18:00<br>
@@ -148,19 +175,12 @@ LINE：0966855668<br><br>
 <div class="service-grid">
 
 <div class="service">一般衣物洗滌</div>
-
 <div class="service">高級衣物乾洗</div>
-
 <div class="service">羽絨外套</div>
-
 <div class="service">洗鞋服務</div>
-
 <div class="service">洗包服務</div>
-
 <div class="service">棉被床組</div>
-
 <div class="service">窗簾地毯</div>
-
 <div class="service">精品護理</div>
 
 </div>
