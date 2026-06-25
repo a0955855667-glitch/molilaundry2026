@@ -1,275 +1,78 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>沫麗專業洗衣</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沫麗專業洗衣 MOLI LAUNDRY</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei",sans-serif;
-background:#f7fbff;
-color:#333;
-line-height:1.8;
-}
-
-.menu-btn{
-position:fixed;
-top:15px;
-right:15px;
-width:55px;
-height:55px;
-border:none;
-background:white;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-font-size:28px;
-z-index:9999;
-}
-
-.mobile-menu{
-display:none;
-position:fixed;
-top:80px;
-right:15px;
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-z-index:9999;
-}
-
-.mobile-menu a{
-display:block;
-padding:10px 0;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
-
-.hero{
-background:linear-gradient(135deg,#e8f4ff,#d5ebff);
-padding:80px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:42px;
-color:#5a97d1;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
-}
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:14px 28px;
-border-radius:12px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.phone-btn{
-background:#5a97d1;
-color:white;
-}
-
-.line-btn{
-background:#06C755;
-color:white;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-h2{
-margin-bottom:15px;
-color:#5a97d1;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-.service{
-background:#eef6ff;
-padding:18px;
-border-radius:12px;
-text-align:center;
-font-weight:bold;
-}
-
-.footer{
-text-align:center;
-padding:30px;
-color:#888;
-}
-
-.line-float{
-position:fixed;
-right:20px;
-bottom:20px;
-width:75px;
-height:75px;
-background:#06C755;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 8px 25px rgba(0,0,0,.25);
-z-index:99999;
-}
-
-@media(max-width:768px){
-
-.service-grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:34px;
-}
-
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<header>
+    <img src="images/logo.jpg" alt="沫麗專業洗衣 Logo" class="logo">
 
-<div id="mobileMenu" class="mobile-menu">
-<a href="#about">關於沫麗</a>
-<a href="#service">服務項目</a>
-<a href="#member">會員優惠</a>
-<a href="#contact">聯絡我們</a>
-</div>
+    <h1>沫麗專業洗衣</h1>
 
-<section class="hero">
+    <p>乾洗・水洗・洗鞋・洗包</p>
+</header>
 
-<h1>沫麗專業洗衣</h1>
+<nav>
+    <a href="#price">價目表</a>
+    <a href="#contact">聯絡我們</a>
+</nav>
 
-<p>乾洗｜洗鞋｜洗包｜棉被床組</p>
+<section id="price">
 
-<a href="tel:0988989898" class="btn phone-btn">
-立即撥打
-</a>
+    <h2>價目表</h2>
 
-<a href="https://page.line.me/942hhawk" class="btn line-btn" target="_blank">
-官方LINE
-</a>
+    <img src="images/price1.jpg" alt="價目表1">
+
+    <img src="images/price2.jpg" alt="價目表2">
+
+    <img src="images/price3.jpg" alt="價目表3">
+
+    <img src="images/price4.jpg" alt="價目表4">
 
 </section>
 
-<div class="container">
+<section id="contact">
 
-<div class="card" id="about">
-<h2>關於沫麗</h2>
+<h2>聯絡資訊</h2>
 
-沫麗專業洗衣提供專業洗衣、洗鞋、洗包與棉被床組清潔服務。
+<p>
+📍 台北市文山區木新路二段63號
+</p>
 
-每件衣物皆經過細心檢查與專業處理，
-讓您的衣物獲得最佳照顧。
+<p>
+📞 0903-097-818
+</p>
 
-</div>
+<p>
 
-<div class="card" id="service">
+<a href="https://maps.app.goo.gl/9YTi4A2D1BqFfNgo9?g_st=ic" target="_blank">
 
-<h2>服務項目</h2>
+Google 地圖
 
-<div class="service-grid">
-
-<div class="service">👔 一般衣物洗滌</div>
-<div class="service">🧥 高級衣物乾洗</div>
-<div class="service">👟 洗鞋服務</div>
-<div class="service">👜 洗包服務</div>
-<div class="service">🛏️ 棉被床組</div>
-<div class="service">✨ 精品護理</div>
-
-</div>
-
-</div>
-
-<div class="card" id="member">
-
-<h2>會員優惠</h2>
-
-💎 儲值1000元享會員價<br>
-💎 儲值3000元送200元<br>
-💎 儲值5000元送500元<br>
-💎 儲值10000元送1200元
-
-</div>
-
-<div class="card">
-
-<h2>價目表</h2>
-
-價目表圖片上傳後將顯示於此。
-
-</div>
-
-<div class="card" id="contact">
-
-<h2>聯絡我們</h2>
-
-📞 0988-989-898<br><br>
-
-💬 LINE官方帳號<br>
-@942hhawk<br><br>
-
-🕒 週一至週五 10:30-20:00<br>
-🕒 週六 10:30-18:00<br>
-❌ 週日公休
-
-</div>
-
-</div>
-
-<div class="footer">
-© 沫麗專業洗衣 MOLI LAUNDRY
-</div>
-
-<a href="https://page.line.me/942hhawk" target="_blank" class="line-float">
-LINE
 </a>
 
-<script>
-function toggleMenu(){
-const menu=document.getElementById("mobileMenu");
-if(menu.style.display==="block"){
-menu.style.display="none";
-}else{
-menu.style.display="block";
-}
-}
-</script>
+</p>
+
+</section>
+
+<a href="https://page.line.me/942hhawk"
+
+class="line-btn"
+
+target="_blank">
+
+LINE 官方帳號
+
+</a>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
